@@ -13,3 +13,9 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+.gitignore
+.gitattributes
+
+project.godot
+icon.svg*
