@@ -143,6 +143,14 @@ offset_right = 256.0
 offset_bottom = 552.0
 text = "Save Changes"
 
+[node name="LineEdit2" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 420.0
+offset_right = 740.0
+offset_bottom = 451.0
+text = "ItsThatEasy"
+
 [connection signal="toggled" from="CheckButton" to="ChangeDiscard" method="track_change" binds= ["../CheckButton"]]
 [connection signal="text_changed" from="TextEdit" to="ChangeDiscard" method="track_change_text" binds= ["../TextEdit"]]
 [connection signal="text_changed" from="LineEdit" to="ChangeDiscard" method="track_change" binds= ["../LineEdit"]]
@@ -150,5 +158,6 @@ text = "Save Changes"
 [connection signal="value_changed" from="HSlider" to="ChangeDiscard" method="track_change" binds= ["../HSlider"]]
 [connection signal="value_changed" from="VSlider" to="ChangeDiscard" method="track_change" binds= ["../VSlider"]]
 [connection signal="item_selected" from="OptionButton" to="ChangeDiscard" method="track_change" binds= ["../OptionButton"]]
-[connection signal="pressed" from="Feedback/discard" to="Feedback" method="_on_discard_pressed" binds= [""]]
+[connection signal="pressed" from="Feedback/discard" to="Feedback" method="_on_discard_pressed"]
 [connection signal="pressed" from="Feedback/save" to="Feedback" method="_on_save_pressed"]
+[connection signal="text_changed" from="LineEdit2" to="ChangeDiscard" method="track_change" binds= ["../LineEdit2"]]

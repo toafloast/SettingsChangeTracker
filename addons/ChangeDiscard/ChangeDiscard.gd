@@ -1,3 +1,4 @@
+@icon("res://addons/ChangeDiscard/icon-simple.png")
 extends Node
 
 ##Change Discarder Addon for quick-and-easy options menus.
@@ -8,12 +9,12 @@ extends Node
 ##Automatically save the settings to a file. Not recommended, it is better to integrate it into your own user settings saving/loading system.
 @export var load_from_file : bool = false
 ##The filepath to save to. Must be unique for every instance of ChangeDiscard to prevent overwriting. res:// saves to project, user:// saves to user data folder.
-@export var save_filepath : String = "user://changediscard.save"
+@export var save_filepath : String = "res://addons/ChangeDiscard/changediscardtest.save"
 @export_subgroup("Encrypt")
 ##Encrypt the resulting file using the provided key. Not necessary, since this is mostlikely just saving configs.
 @export var encrypt : bool = false
 ##File encryption/decryption key. Use your own!
-@export var encryption_key : String = "secretcode_4160941096"
+@export var encryption_key : String = "use-your-own-key"
 
 ##Default values, set on initialization.
 var default_values : Dictionary = {}
